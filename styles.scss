@@ -12,6 +12,7 @@
  }
 
 body{
+    background-color: rgb(26, 31, 69);
     display: grid;
     grid-template-columns: 200px 1fr;
     grid-template-areas: 
@@ -33,6 +34,13 @@ body{
 
     & a{
         text-decoration: none;
+        color: #d7d7e3;
+        opacity: .7;
+        transition: .05;
+
+    }
+    & a:hover{
+        opacity: 1;
         color: #d7d7e3;
 
     }
@@ -60,34 +68,47 @@ body{
 
     li{
         padding-bottom: 12px;
+        opacity: .6;
+        transition: .05;
     }
+
+    & li:hover{
+        opacity: 1;
+        transition: .05;
+    }
+        
 
 }
 .main-content{
     grid-area: main;
     height: 100vh;
-    display: flex;
-    justify-content: center;
     padding-top: 50px;
     background-color: #14142e;
     text-align: center;
+
+    .main-section{
+        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
 
     & h2{
 
         color: #d7d7e3;
         font-size: 35px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
+    & .img-carousel{
 
-    & img{
-        max-width: 900px;
+        width: 500px;
         height: 300px;
-        border-radius: 15px;
+        border-radius: 12px;
     }
-
+    
+    
 
 }
-
 .main-footer{
     grid-area: footer;
     background-color: blue;
