@@ -37,13 +37,14 @@ body{
         color: #d7d7e3;
         opacity: .7;
         transition: .05;
-
-    }
+        
     & a:hover{
         opacity: 1;
         color: #d7d7e3;
-
     }
+    }
+
+    
 
     ul{
         display: flex;
